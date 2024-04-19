@@ -1,0 +1,43 @@
+﻿<Window x:Class="FFIV_Monster_Viewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFIV_Monster_Viewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Image Name="imgMain"  HorizontalAlignment="Left" Height="233" Margin="26,167,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button Name="backbtn" Content="&lt;" HorizontalAlignment="Left" Margin="209,70,0,0" VerticalAlignment="Top" Height="49" Width="65" Click="backbtn_Click"/>
+        <Button Name="forwardbtn" Content="&gt;" HorizontalAlignment="Left" Margin="431,70,0,0" VerticalAlignment="Top" Height="49" Width="65" Click="forwardbtn_Click"/>
+        <Button Name="skipbackbtn" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="123,70,0,0" VerticalAlignment="Top" Height="49" Width="65" Click="skipbackbtn_Click"/>
+        <Button Name="skipforwardbtn" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="521,70,0,0" VerticalAlignment="Top" Height="49" Width="65" Click="skipforwardbtn_Click"/>
+        <Label Content="Monster ID" HorizontalAlignment="Left" Margin="310,49,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtCounter"  HorizontalAlignment="Left" Margin="318,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" TextAlignment="Center"/>
+        <Slider Name ="MonsterSlide" HorizontalAlignment="Left" Margin="125,134,0,0" VerticalAlignment="Top" Width="460" ValueChanged="MonsterSlide_ValueChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="360,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Health Points" HorizontalAlignment="Center" Margin="0,189,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,-0.114"/>
+        <Label Content="Gold" HorizontalAlignment="Left" Margin="359,209,0,0" VerticalAlignment="Top"/>
+        <Label Content="Experience" HorizontalAlignment="Left" Margin="361,227,0,0" VerticalAlignment="Top"/>
+        <Label Content="Physical Power" HorizontalAlignment="Left" Margin="362,245,0,0" VerticalAlignment="Top"/>
+        <Label Content="Magical Defense" HorizontalAlignment="Left" Margin="363,300,0,0" VerticalAlignment="Top"/>
+        <Label Content="Magical Power" HorizontalAlignment="Left" Margin="362,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.04"/>
+        <Label Content="Physical Defense" HorizontalAlignment="Left" Margin="361,282,0,0" VerticalAlignment="Top"/>
+        <Label Content="Family" HorizontalAlignment="Left" Margin="361,319,0,0" VerticalAlignment="Top"/>
+        <Label Content="Weak Against" HorizontalAlignment="Left" Margin="361,337,0,0" VerticalAlignment="Top"/>
+        <Label Content="Strong Against" HorizontalAlignment="Left" Margin="363,360,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtMonstName" HorizontalAlignment="Left" Margin="520,176,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstHealth" HorizontalAlignment="Left" Margin="520,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstGold" HorizontalAlignment="Left" Margin="520,213,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstExperience" HorizontalAlignment="Left" Margin="520,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstPhyicPower" HorizontalAlignment="Left" Margin="520,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstMagicDefense" HorizontalAlignment="Left" Margin="520,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstPhyisDefense" HorizontalAlignment="Left" Margin="520,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstMagiPower" HorizontalAlignment="Left" Margin="520,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstWeakAgainst" HorizontalAlignment="Left" Margin="520,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstFamily" HorizontalAlignment="Left" Margin="520,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMonstStrongAgainst"  HorizontalAlignment="Left" Margin="521,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnLoadFile" Content="Load File" HorizontalAlignment="Left" Margin="318,26,0,0" VerticalAlignment="Top" Width="59" Height="23" Click="btnLoadFile_Click"/>
+    </Grid>
+</Window>
